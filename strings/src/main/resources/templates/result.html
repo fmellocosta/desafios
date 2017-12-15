@@ -1,0 +1,15 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>String formatter</title>
+</head>
+
+<body>
+<p><a href="/form">HOME</a></p>
+
+<p>Here is your result:</p>
+<p th:text="'length: ' + ${form.length}" />
+<p th:text="'content: ' + ${form.content}" />
+</body>
+
+</html>
