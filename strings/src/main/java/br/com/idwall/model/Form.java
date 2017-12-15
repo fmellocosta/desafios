@@ -6,6 +6,7 @@ public class Form {
 
 	private int length;
 	private String content;
+	private boolean justify;
 	private List<String> formattedContent;
 
 	public int getLength() {
@@ -31,5 +32,13 @@ public class Form {
 	public void setFormattedContent(List<String> formattedContent) {
 		this.formattedContent = formattedContent;
 	}
-	
+
+	public boolean isJustify() {
+		return justify;
+	}
+
+	public void setJustify(boolean justify) {
+		this.justify = justify;
+	}
+
 }

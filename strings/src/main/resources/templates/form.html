@@ -11,6 +11,9 @@
 		<form method="post" action="#" th:action="@{/form}" th:object="${form}">
 			Character limit per line:<br/>
 			<input type="text" id="length" name="length" size="10"/><br/>
+
+			Justify text ?<br/>
+			<input type="checkbox" id="justify" name="justify" /><br/>
 			
 			Paste your text here:<br/>
 			<textarea rows="5" cols="50" id="content" name="content"></textarea><br/>
