@@ -34,3 +34,24 @@ O exemplo de output está [neste arquivo](https://github.com/idwall/desafios/blo
 - Uso do Docker.
 - Parametrização da quantidade de caracteres por linha.
 - Utilizar as versões mais atuais da linguagem que escolher para desenvolver (JavaScript ES6+; Java 8; Python 3, etc).
+
+## Instruções
+
+### Requerimento
+
+1. JDK 1.8
+2. Maven
+
+### Execução
+
+1. Clonar o repositório para um diretório em seu computador
+`$ git clone [CAMINHO_REPOSITORIO] [DIRETORIO_NO_COMPUTADOR]`
+
+2. Executar o comando abaixo para gerar o arquivo .jar
+`$ mvn clean install`
+
+3. Executar o comando abaixo para executar o arquivo .jar gerado
+`$ java -jar target/strings-1.0.0.jar`
+
+4. Em seu navegador, abrir a url [http://localhost:8080/form](http://localhost:8080/form)
+
