@@ -1,0 +1,15 @@
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+	<title>String formatter</title>
+</head>
+
+<body>
+	<p><a href="/form">HOME</a></p>
+	
+	<h1 th:text="${status}">404</h1>
+	<p th:utext="${error}">Error java.lang.NullPointerException</p>
+	
+</body>
+
+</html>

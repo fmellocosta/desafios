@@ -1,13 +1,10 @@
 package br.com.idwall.model;
 
-import java.util.List;
-
 public class Form {
 
-	private int length;
+	private int length = 40;
 	private String content;
 	private boolean justify;
-	private List<String> formattedContent;
 
 	public int getLength() {
 		return length;
@@ -23,14 +20,6 @@ public class Form {
 
 	public void setContent(String content) {
 		this.content = content;
-	}
-
-	public List<String> getFormattedContent() {
-		return formattedContent;
-	}
-
-	public void setFormattedContent(List<String> formattedContent) {
-		this.formattedContent = formattedContent;
 	}
 
 	public boolean isJustify() {

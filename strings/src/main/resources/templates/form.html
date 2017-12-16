@@ -1,4 +1,4 @@
-<html>
+<html xmlns:th="http://www.thymeleaf.org">
 
 <head>
 	<title>String formatter</title>
@@ -7,20 +7,20 @@
 <body>
 	<p><a href="/form">HOME</a></p>
 	
-	<p>
+	<div>
 		<form method="post" action="#" th:action="@{/form}" th:object="${form}">
 			Character limit per line:<br/>
-			<input type="text" id="length" name="length" size="10"/><br/>
-
+			<input type="text" id="length" name="length" th:field="*{length}" /><br/>
+			
 			Justify text ?<br/>
-			<input type="checkbox" id="justify" name="justify" /><br/>
+			<input type="checkbox" id="justify" name="justify" th:field="*{justify}"/><br/>
 			
 			Paste your text here:<br/>
-			<textarea rows="5" cols="50" id="content" name="content"></textarea><br/>
-			
+			<textarea rows="5" cols="50" id="content" name="content" th:field="*{content}"></textarea><br/>
+						
 			<input type="submit" />
 		</form>
-	</p>
+	</div>
 </body>
 
 </html>

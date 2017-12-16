@@ -10,11 +10,6 @@
 <p>Here is your result:</p>
 <p th:text="'length: ' + ${form.length}" />
 <p th:text="'content: ' + ${form.content}" />
-
-<ul th:each="paragraph : ${form.formattedContent}">
-	<li th:text="${paragraph}" />
-</ul>
-
 </body>
 
 </html>
