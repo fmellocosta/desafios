@@ -1,0 +1,23 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+	<title>Reddit Crawler</title>
+</head>
+
+<body>
+	<p>[<a href="/">HOME</a>]</p>
+	
+	<div th:each="subreddit: ${list}">
+		
+		<p th:text="${subreddit.key}">Subreddit Name</p>
+		
+		<div th:each="thread: ${subreddit.value}">
+			<p th:text="${thread.title}">Thread title</p>
+			<p th:text="${thread.votes}">Thread votes</p>
+			<p th:text="${thread.link}">Thread link</p>
+			<p th:text="${thread.commentsLink}">Thread comments link</p>
+		</div>
+		
+	</div>
+	
+</body>
+</html>
