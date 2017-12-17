@@ -1,0 +1,3 @@
+br\com\idwall\Main.class
+br\com\idwall\service\RedditCrawlerBotService.class
+br\com\idwall\controller\RedditCrawlerBot.class
